@@ -214,7 +214,7 @@ colorPalette.forEach(color => {
         root.style.setProperty('--primary-color-hue', primaryHue);
     })
 })
-/* tHEME BACKGROUNDS */
+/* THEME BACKGROUNDS */
 let lightColorLightness;
 let whiteColorLightness;
 let darkColorLightness;
