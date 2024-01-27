@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- LINK ICONS -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Fontawsome 6-->
+    <script src="https://kit.fontawesome.com/e38424ac87.js" crossorigin="anonymous"></script>
+    <title>Blog - Nymul Islam Moon</title>
+    <link rel="icon" href="assets/img/avatar-1.svg" type="image/icon type">
+</head>
+
+<style>
+    .blog-item{
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <!-- HEADER (Same as in index.html) -->
+    <header class="header" id="header">
+        <!-- nav -->
+        <nav class="nav container padd-15">
+          <!-- nav logo -->
+          <a href="" class="nav-logo">
+            <h2>Moon</h2>
+          </a>
+          <!-- nav menu -->
+          <div class="nav-menu" id="nav-menu">
+            <!-- nav list -->
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#experience" class="nav-link">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#pricing" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link active-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <!-- nav close -->
+            <div class="nav-close" id="nav-close">
+              <i class="lni lni-close"></i>
+            </div>
+          </div>
+          <!-- nav btn -->
+          <div class="nav-btns">
+            <!-- theme change btn -->
+            <i class="lni lni-pallet change-theme" id="theme-button"></i>
+            <!-- toggle btn -->
+            <div class="nav-toggle" id="nav-toggle">
+              <i class="lni lni-grid-alt"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!-- MAIN BLOG CONTENT -->
+    <main class="main-content">
+        <!-- Blog Section -->
+        <section class="blog section" id="blog">
+            <div class="container">
+                <br>
+                <h2 class="section-title padd-15">Latest Blog Posts</h2>
+                <div class="row">
+                    <!-- Blog Card 1 -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#"><img src="assets/img/1.svg" alt="Blog Thumbnail"></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#">Title of Blog Post 1</a></h3>
+                                <ul class="meta">
+                                    <li>Published Date</li>
+                                    <li>Author Name</li>
+                                </ul>
+                                <p>Short description or excerpt from the blog post...</p>
+                                <a href="#" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#"><img src="assets/img/1.svg" alt="Blog Thumbnail"></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#">Title of Blog Post 1</a></h3>
+                                <ul class="meta">
+                                    <li>Published Date</li>
+                                    <li>Author Name</li>
+                                </ul>
+                                <p>Short description or excerpt from the blog post...</p>
+                                <a href="#" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#"><img src="assets/img/1.svg" alt="Blog Thumbnail"></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#">Title of Blog Post 1</a></h3>
+                                <ul class="meta">
+                                    <li>Published Date</li>
+                                    <li>Author Name</li>
+                                </ul>
+                                <p>Short description or excerpt from the blog post...</p>
+                                <a href="#" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#"><img src="assets/img/1.svg" alt="Blog Thumbnail"></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#">Title of Blog Post 1</a></h3>
+                                <ul class="meta">
+                                    <li>Published Date</li>
+                                    <li>Author Name</li>
+                                </ul>
+                                <p>Short description or excerpt from the blog post...</p>
+                                <a href="#" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional blog cards... -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add this modal structure just before the closing </body> tag -->
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <!-- Blog content goes here -->
+                <h2>Blog Title</h2>
+                <p>Date: 2021-01-01</p>
+                <p>Author: John Doe</p>
+                <img src="path-to-image.jpg" alt="Blog image">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet sodales vulputate rhoncus purus auctor praesent volutpat conubia, ultrices feugiat semper vivamus dui torquent diam penatibus facilisis nisi etiam molestie senectus enim. Conubia morbi congue auctor cubilia quam aptent, et rutrum sollicitudin dictum porttitor, egestas quis laoreet massa ultricies. Duis etiam tempus sagittis hendrerit orci erat class vel tristique, quisque nec morbi integer mi justo enim malesuada magna, netus litora imperdiet purus sollicitudin eu euismod ultricies. Massa lacus conubia auctor torquent pulvinar aptent euismod egestas, mattis augue integer sapien sociosqu malesuada platea sollicitudin cursus, interdum vivamus dis id proin purus nisi. Porttitor gravida condimentum nascetur luctus lacus malesuada, vitae tristique ad fusce. Praesent vivamus pretium himenaeos cum auctor volutpat lobortis diam proin, eget luctus quisque parturient neque laoreet dignissim porta sed dictum, suscipit quam sapien morbi eros a gravida phasellus.
+
+                    Eleifend tincidunt dictum netus proin vel feugiat sociis tortor cras, montes torquent maecenas ornare primis molestie quisque vestibulum, nisi metus porttitor cursus facilisi pretium suspendisse venenatis. Sem nam phasellus maecenas augue vivamus sociis montes, lobortis magnis potenti nascetur nostra iaculis, metus interdum aenean porta a quam. Pretium purus urna senectus fusce dui malesuada, elementum a arcu nunc ligula himenaeos quam, vivamus gravida penatibus conubia eros. Elementum odio ante placerat diam at urna molestie mauris penatibus montes suspendisse ridiculus, tristique eget varius tortor leo nisl class tempor fringilla etiam condimentum, pharetra porttitor torquent praesent cubilia taciti nam nec auctor orci parturient. Etiam rutrum suspendisse pellentesque aptent facilisis vitae tellus natoque cras varius, nam eleifend urna placerat dictum facilisi gravida proin condimentum per, sodales potenti habitasse eget curae mauris vestibulum pulvinar accumsan. Ac aenean erat convallis suspendisse netus mi aliquet bibendum scelerisque condimentum gravida vulputate, sem dignissim iaculis curabitur facilisis ad himenaeos feugiat nec mattis.Lorem ipsum dolor sit amet consectetur adipiscing elit, cubilia ridiculus ultrices nascetur magnis quam euismod tortor, tellus parturient nisl praesent fringilla vehicula. Congue curae vehicula ligula curabitur in vestibulum pretium convallis nisl massa erat vulputate, vivamus iaculis metus non volutpat viverra ornare leo facilisis nascetur. Bibendum phasellus suscipit hendrerit netus augue dis nulla nisl sem, nisi fames neque nec sollicitudin duis tempus non himenaeos, conubia tristique gravida blandit molestie quis habitant aliquam. Porta primis senectus taciti mus imperdiet fermentum, proin etiam sollicitudin tristique faucibus est euismod, magnis id gravida sem sodales. Fames nulla donec habitant dignissim viverra dictum sed blandit hendrerit nibh metus, faucibus per rutrum tincidunt pellentesque senectus taciti ad nisi porta, platea sociosqu tempor suspendisse phasellus maecenas nec mi himenaeos fringilla. Parturient sagittis libero auctor purus mattis dictum venenatis, nam blandit feugiat mus morbi rutrum etiam duis, lectus elementum vel pulvinar placerat nisi. Vestibulum tortor tempor aliquet neque parturient nam molestie phasellus curabitur velit pharetra pellentesque sociis, dui eros cras lacus nostra rutrum taciti senectus sapien habitant eget. Egestas suscipit porttitor libero fringilla blandit quisque eros eleifend et metus, laoreet class neque urna scelerisque dis erat vitae nullam, venenatis condimentum nam integer ac hac morbi aenean euismod. Tempor per sollicitudin ad euismod proin odio penatibus laoreet dictum, donec erat dictumst vel dapibus morbi maecenas urna porttitor, pharetra metus conubia sociis nisl facilisi gravida mattis, habitasse cursus sodales integer augue aptent ligula purus. Nisi molestie curabitur rutrum pellentesque aptent torquent laoreet nascetur phasellus porta justo cursus mattis augue, suspendisse sollicitudin tellus consequat habitasse lacus interdum maecenas quis pharetra convallis dictum bibendum. Odio est porttitor taciti varius magna nulla, dignissim laoreet aenean per duis lacus sagittis, risus conubia quisque scelerisque ornare. Cras torquent elementum habitasse senectus bibendum iaculis habitant mi, semper per hendrerit luctus congue vehicula placerat parturient, lectus malesuada fusce egestas ligula dapibus dictum.
+
+Curabitur est nisi donec mauris etiam ac tempus nibh, pretium nisl sagittis mus platea tempor vel feugiat, purus cubilia eros diam hac convallis odio. Primis nullam vestibulum torquent placerat nulla nunc auctor, suscipit aptent in tempus est ante, ullamcorper integer nibh elementum pulvinar malesuada. Gravida ullamcorper penatibus netus dictum dui litora, pellentesque lectus senectus nascetur primis hac posuere, nisl placerat natoque magnis eleifend. Elementum cursus habitant sed semper, ridiculus luctus urna class senectus, lacus odio ac. Tristique vehicula auctor imperdiet tincidunt parturient himenaeos sociis, egestas vestibulum eu cursus vitae sem. Sagittis cras condimentum risus maecenas eleifend netus nulla per varius hendrerit diam, nostra conubia arcu mus felis et inceptos venenatis turpis sociosqu sociis, vulputate gravida quis curae himenaeos vivamus dapibus justo luctus vestibulum. Fames velit eu ultricies morbi magna, sapien integer turpis volutpat facilisis dictum, ad neque nisi nascetur. Tellus torquent suspendisse metus erat duis et inceptos dictumst suscipit himenaeos neque, tristique scelerisque primis potenti elementum vel euismod quis nunc eu in, ultrices sollicitudin gravida proin risus quisque massa condimentum molestie nam.
+
+Proin inceptos interdum cursus natoque netus senectus a, pulvinar bibendum id per tempus volutpat hac aliquet, dis consequat etiam quam sed lobortis varius, eros ornare fames purus turpis duis. Auctor mattis pretium aptent ad libero sed malesuada vitae dui, himenaeos tempus montes quis platea ullamcorper congue. Inceptos magnis pharetra erat accumsan mauris ultrices sapien dis gravida ad, semper consequat nisl nulla duis maecenas in sociis. Dis netus habitant congue senectus arcu himenaeos, mauris aliquam nullam augue etiam aliquet taciti, sed aenean sodales dui mi. Lectus laoreet integer ligula nunc pellentesque aenean purus dictum curae, ultricies dis eu per non natoque bibendum mollis velit habitasse, ad euismod parturient sem commodo nascetur quam inceptos. Risus elementum praesent congue morbi etiam nisl iaculis, consequat ac quam purus dignissim dapibus auctor, gravida a neque aenean eget feugiat. Netus tortor mauris fringilla ad ultricies volutpat massa inceptos quisque, cras gravida dui sapien praesent nostra integer auctor scelerisque lacinia, nascetur habitant rutrum tempor eros orci sagittis quam. Sociis aenean ridiculus eros interdum lectus fermentum nulla curae vulputate, orci nullam aliquam ad dapibus volutpat iaculis tempor nam accumsan, lobortis condimentum hendrerit hac mattis sociosqu nec facilisi. Ullamcorper sodales aptent parturient elementum ultricies nostra dapibus maecenas pharetra laoreet volutpat leo pellentesque mattis quis velit, id varius congue sem eros odio magna cum gravida phasellus suspendisse urna dignissim auctor.
+
+Consequat ullamcorper magna dapibus aenean phasellus a ante odio eu id morbi, proin conubia varius erat tortor ut molestie cum est in sociosqu, nostra laoreet ligula nascetur vivamus risus vestibulum curae aliquet euismod. Libero sagittis aliquet congue hac vehicula sociosqu turpis nullam fames in nunc, sollicitudin placerat quisque eros nulla tristique ultrices ullamcorper tempus. Accumsan euismod parturient sapien egestas quam turpis natoque congue taciti rutrum iaculis penatibus vivamus faucibus inceptos luctus, donec sodales massa habitasse aliquet orci lobortis netus eleifend vestibulum magnis neque posuere nascetur. Pellentesque vel ridiculus integer sed volutpat dapibus conubia est ut lacinia in lacus, nulla tristique netus congue odio justo ad rhoncus bibendum risus tincidunt eu, luctus condimentum sociosqu feugiat eget libero pretium sagittis cras molestie ultricies. Donec praesent vitae volutpat pellentesque scelerisque augue tincidunt, eu id penatibus proin mauris sociis eget, rutrum tempor class tempus molestie quisque. Blandit gravida justo porta libero fames senectus potenti quam vehicula facilisi cum enim metus, scelerisque ullamcorper curabitur bibendum facilisis laoreet aptent euismod curae leo lacinia turpis.
+
+Nostra condimentum venenatis enim etiam arcu neque, duis himenaeos platea faucibus habitasse eros, eleifend cum odio pellentesque hendrerit. Consequat natoque mauris potenti sociis facilisi ante pharetra, libero platea laoreet praesent habitant sollicitudin, aliquet nam litora cum ac risus. Primis per rhoncus tempus phasellus tellus erat leo tortor turpis eleifend habitasse, nisi posuere ullamcorper porttitor id euismod velit lobortis nam arcu, non cursus penatibus fermentum hac potenti duis quisque metus mollis. Mi sociis proin aliquet porttitor conubia nulla semper elementum turpis eros hac, maecenas per est viverra potenti dictumst rhoncus dignissim interdum scelerisque, dui fames quam accumsan vestibulum sodales nisi ullamcorper vitae himenaeos. Lacinia massa egestas etiam rhoncus tellus mattis curabitur, at ultrices varius bibendum metus sem. Metus velit neque convallis dapibus mi turpis pharetra dictumst tincidunt quisque, laoreet inceptos per sapien purus habitant cubilia ultricies hac urna, gravida interdum sollicitudin fusce magna parturient habitasse nulla erat.
+
+Feugiat sollicitudin molestie lobortis placerat nulla torquent tortor, nullam platea erat netus sociosqu vitae auctor, ultrices facilisis aptent id taciti fames. Pulvinar hendrerit eros netus himenaeos commodo lectus sollicitudin non, sapien facilisis malesuada lacus habitasse maecenas libero quis, curae facilisi quisque fringilla pharetra suscipit blandit. Inceptos maecenas vel nullam class massa torquent nascetur habitant, proin ullamcorper enim libero velit mi turpis leo, tristique diam ad fusce eu sodales condimentum. Lectus etiam gravida tortor fringilla dapibus conubia sociis, maecenas aptent tristique nibh morbi laoreet aliquam, ligula praesent euismod ad iaculis pretium. Ornare potenti elementum felis nam non diam tempor ultricies, augue libero viverra habitant sed aliquam ad. Commodo ultricies ad malesuada eleifend fames scelerisque sagittis nascetur, sociosqu mauris taciti porttitor mi vehicula aliquet justo, quis tristique mollis euismod aptent ullamcorper dis. Purus risus cras id urna turpis diam habitant molestie interdum lectus, ac nostra luctus proin sodales vulputate lacinia dui. Pellentesque nisl mattis penatibus vulputate sagittis, lacus nulla netus interdum, turpis inceptos arcu class.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER (Same as in index.html) -->
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
