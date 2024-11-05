@@ -258,3 +258,43 @@ Bg3.addEventListener('click', () => {
     Bg1.classList.remove('active');
     changeBG();
 })
+
+// Modal Functions for Blog Reading
+function openBlogModal(blogId) {
+    const modalContent = document.getElementById("modal-blog-content");
+    
+    // Example content based on `blogId`, ideally fetched dynamically from a data source
+    let blogData = {
+        '1': {
+            title: "Title of Blog Post 1",
+            date: "2022-02-09",
+            author: "Author Name",
+            content: "This is the full content of Blog Post 1..."
+        },
+        // Additional blog data can be added here
+    };
+
+    if (blogData[blogId]) {
+        modalContent.innerHTML = `
+            <h2>${blogData[blogId].title}</h2>
+            <p><strong>Date:</strong> ${blogData[blogId].date}</p>
+            <p><strong>Author:</strong> ${blogData[blogId].author}</p>
+            <p>${blogData[blogId].content}</p>
+        `;
+        document.getElementById("blogModal").style.display = "block";
+    } else {
+        modalContent.innerHTML = "<p>Blog content not found.</p>";
+    }
+}
+
+function closeBlogModal() {
+    document.getElementById("blogModal").style.display = "none";
+}
+
+// Close modal when clicking outside of modal content
+window.onclick = function(event) {
+    const modal = document.getElementById("blogModal");
+    if (event.target === modal) {
+        closeBlogModal();
+    }
+};
