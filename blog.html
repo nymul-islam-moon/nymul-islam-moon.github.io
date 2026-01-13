@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- LINK ICONS -->
     <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
     <!-- SWIPER CSS -->
@@ -17,97 +16,118 @@
     <link rel="icon" href="assets/img/avatar-1.svg" type="image/icon type">
 </head>
 
-<style>
-    .blog-item{
-        margin-bottom: 30px;
-    }
-</style>
-
 <body>
-    <!-- HEADER (Same as in index.html) -->
+    <!-- HEADER -->
     <header class="header" id="header">
-        <!-- nav -->
         <nav class="nav container padd-15">
-          <!-- nav logo -->
-          <a href="" class="nav-logo">
-            <h2>Moon</h2>
-          </a>
-          <!-- nav menu -->
-          <div class="nav-menu" id="nav-menu">
-            <!-- nav list -->
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="index.html#home" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#experience" class="nav-link">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#pricing" class="nav-link">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#portfolio" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link active-link">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-            <!-- nav close -->
-            <div class="nav-close" id="nav-close">
-              <i class="lni lni-close"></i>
+            <a href="index.html" class="nav-logo">
+                <h2>Moon</h2>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link active-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
             </div>
-          </div>
-          <!-- nav btn -->
-          <div class="nav-btns">
-            <!-- theme change btn -->
-            <i class="lni lni-pallet change-theme" id="theme-button"></i>
-            <!-- toggle btn -->
-            <div class="nav-toggle" id="nav-toggle">
-              <i class="lni lni-grid-alt"></i>
+            <div class="nav-btns">
+                <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
             </div>
-          </div>
         </nav>
-      </header>
+    </header>
 
     <!-- MAIN BLOG CONTENT -->
-    <main class="main-content">
-        <!-- Blog Section -->
+    <main class="main-content" style="min-height: 100vh; padding-top: 100px;">
         <section class="blog section" id="blog">
             <div class="container">
                 <h2 class="section-title padd-15">Latest Blog Posts</h2>
                 <div class="row">
                     <!-- Blog Card 1 -->
-                    <div class="blog-item padd-15" onclick="openBlogModal('1')">
-                        <div class="inner">
+                    <div class="blog-item padd-15">
+                        <div class="inner" onclick="openBlogModal('1')">
                             <div class="thumb">
-                                <a href="#"><img src="assets/img/1.svg" alt="Blog Thumbnail"></a>
+                                <a href="javascript:void(0)"><span class="category">Reviews</span></a>
+                                <a href="javascript:void(0)"><img src="assets/img/1.svg" alt="Blog Thumbnail"></a>
                             </div>
                             <div class="details">
-                                <h3 class="title">Title of Blog Post 1</h3>
+                                <h3 class="title">5 Best App Development Tool for Your Projects</h3>
                                 <ul class="meta">
-                                    <li>Published Date</li>
-                                    <li>Author Name</li>
+                                    <li>09 February, 2022</li>
+                                    <li>Nymul Islam Moon</li>
                                 </ul>
-                                <p>Short description or excerpt from the blog post...</p>
+                                <p>Discover the top 5 development tools that can streamline your app development workflow...</p>
                                 <a href="javascript:void(0)" class="btn btn-default">Read More</a>
                             </div>
                         </div>
                     </div>
-    
-                    <!-- Add more blog items here, with unique IDs in `onclick` -->
+
+                    <!-- Blog Card 2 -->
+                    <div class="blog-item padd-15">
+                        <div class="inner" onclick="openBlogModal('2')">
+                            <div class="thumb">
+                                <a href="javascript:void(0)"><span class="category">Tutorial</span></a>
+                                <a href="javascript:void(0)"><img src="assets/img/2.svg" alt="Blog Thumbnail"></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title">Common Misconceptions About Payment</h3>
+                                <ul class="meta">
+                                    <li>07 February, 2022</li>
+                                    <li>Nymul Islam Moon</li>
+                                </ul>
+                                <p>Understanding payment gateway integration and clearing up common myths...</p>
+                                <a href="javascript:void(0)" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="blog-item padd-15">
+                        <div class="inner" onclick="openBlogModal('3')">
+                            <div class="thumb">
+                                <a href="javascript:void(0)"><span class="category">Business</span></a>
+                                <a href="javascript:void(0)"><img src="assets/img/1.svg" alt="Blog Thumbnail"></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title">3 Things to Know About Startup Business</h3>
+                                <ul class="meta">
+                                    <li>09 February, 2022</li>
+                                    <li>Nymul Islam Moon</li>
+                                </ul>
+                                <p>Essential insights every entrepreneur should know before starting their business...</p>
+                                <a href="javascript:void(0)" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- Add this modal structure just before the closing </body> tag -->
+    <!-- Blog Modal -->
     <div id="blogModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeBlogModal()">&times;</span>
@@ -117,12 +137,65 @@
         </div>
     </div>
 
-
-
-    <!-- FOOTER (Same as in index.html) -->
+    <!-- FOOTER -->
     <footer class="footer">
-        <!-- Footer content -->
+        <div class="container">
+            <div class="footer-text padd-15">
+                <p>&copy; nymul-islam-moon</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Theme Customize -->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize Your View</h2>
+            <p>Manage Your Font Size, Color Background</p>
+            <!-- font size -->
+            <div class="font-size">
+                <h3>Font Size</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- color -->
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- background -->
+            <div class="background">
+                <h3>Background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5>Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5>Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
