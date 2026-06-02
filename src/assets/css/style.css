@@ -428,22 +428,24 @@ h3 {
 }
 
 .home .intro .social-icons a {
-  font-size: var(--h3-font-size);
-  color: var(--text-primary);
+  font-size: 1.5rem;
+  color: var(--color-primary) !important;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  background: var(--bg-secondary);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--color-primary);
 }
 
 .home .intro .social-icons a:hover {
-  color: white;
+  color: white !important;
   background: var(--color-primary);
   transform: translateY(-3px);
+  border-color: var(--color-primary);
 }
 
 .scroll-down {
