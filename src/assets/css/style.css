@@ -170,6 +170,7 @@ h3 {
   font-family: var(--display-font);
   font-style: italic;
   font-weight: 300;
+  margin-top: var(--m-1-5);
 }
 
 .typing-cursor {
@@ -1847,6 +1848,10 @@ h3 {
     font-size: 1.5rem;
     line-height: 1.4;
     margin-bottom: var(--m-0-75);
+  }
+
+  .info-text {
+    margin-top: 0;
   }
 
   .home .intro p {
