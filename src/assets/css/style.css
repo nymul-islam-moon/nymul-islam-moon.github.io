@@ -437,14 +437,24 @@ h3 {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid var(--color-primary);
   transition: all 0.3s ease;
-  font-size: 1.8rem;
   text-decoration: none;
+  color: var(--color-primary);
+}
+
+.home .intro .social-icons a svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .home .intro .social-icons a:hover {
   background: var(--color-primary);
+  color: white;
   transform: translateY(-3px);
-  border-color: var(--color-primary);
+}
+
+.home .intro .social-icons a:hover svg {
+  fill: white;
 }
 
 .scroll-down {
