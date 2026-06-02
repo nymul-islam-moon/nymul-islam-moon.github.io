@@ -437,16 +437,12 @@ h3 {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid var(--color-primary);
   transition: all 0.3s ease;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--color-primary);
+  font-size: 1.8rem;
   text-decoration: none;
-  letter-spacing: 1px;
 }
 
 .home .intro .social-icons a:hover {
   background: var(--color-primary);
-  color: white;
   transform: translateY(-3px);
   border-color: var(--color-primary);
 }

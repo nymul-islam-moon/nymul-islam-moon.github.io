@@ -16,11 +16,11 @@ export default function Home() {
           <span><TypingAnimation /></span>
 
           <ul className="social-icons">
-            <li><a href="https://stackoverflow.com/users/13756777/nymul-islam-moon" target="_blank" rel="noopener noreferrer" title="Stack Overflow">SO</a></li>
-            <li><a href="https://github.com/nymul-islam-moon" target="_blank" rel="noopener noreferrer" title="GitHub">GH</a></li>
-            <li><a href="https://www.linkedin.com/in/nymul-islam-moon-5b7622200/" target="_blank" rel="noopener noreferrer" title="LinkedIn">IN</a></li>
-            <li><a href="https://www.facebook.com/nymulislammoon/" target="_blank" rel="noopener noreferrer" title="Facebook">FB</a></li>
-            <li><a href="https://medium.com/@nymulislam.dev" target="_blank" rel="noopener noreferrer" title="Medium">MD</a></li>
+            <li><a href="https://stackoverflow.com/users/13756777/nymul-islam-moon" target="_blank" rel="noopener noreferrer" title="Stack Overflow">🔗</a></li>
+            <li><a href="https://github.com/nymul-islam-moon" target="_blank" rel="noopener noreferrer" title="GitHub">🐙</a></li>
+            <li><a href="https://www.linkedin.com/in/nymul-islam-moon-5b7622200/" target="_blank" rel="noopener noreferrer" title="LinkedIn">💼</a></li>
+            <li><a href="https://www.facebook.com/nymulislammoon/" target="_blank" rel="noopener noreferrer" title="Facebook">📘</a></li>
+            <li><a href="https://medium.com/@nymulislam.dev" target="_blank" rel="noopener noreferrer" title="Medium">📝</a></li>
           </ul>
 
           <div>
