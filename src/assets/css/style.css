@@ -516,7 +516,7 @@ h3 {
   flex: 0 0 35%;
   max-width: 35%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -529,6 +529,7 @@ h3 {
   overflow: hidden;
   box-shadow: 0 10px 40px rgba(69, 67, 96, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 0;
 }
 
 .about-img-wrapper:hover {
