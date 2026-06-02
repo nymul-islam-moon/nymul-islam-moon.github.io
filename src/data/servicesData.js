@@ -2,22 +2,22 @@ export const servicesData = [
   {
     id: 1,
     icon: "/assets/img/service-1.svg",
-    title: "Problem Solving",
-    description: "I have solved 800+ problems in various online platforms and have great knowledge in algorithms",
+    title: "Backend Development",
+    description: "Expert in building scalable backend systems with Python, PHP, and modern frameworks. Strong focus on API design and microservices architecture.",
     className: "service-purple"
   },
   {
     id: 2,
     icon: "/assets/img/service-2.svg",
-    title: "Web Development",
-    description: "I am expert in Laravel, PHP, Problem solving and Algorithm. I have job experience in Laravel.",
+    title: "Database & System Design",
+    description: "Specialized in database architecture, optimization, and system design. Experience with relational databases, query optimization, and data modeling.",
     className: "service-yellow"
   },
   {
     id: 3,
     icon: "/assets/img/service-3.svg",
-    title: "Photography",
-    description: "Capturing moments and creating visual stories through professional photography services.",
+    title: "AI & Machine Learning",
+    description: "Building intelligent systems with Python, implementing ML models, and integrating AI solutions into production applications.",
     className: "service-pink"
   }
 ];

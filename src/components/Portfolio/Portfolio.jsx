@@ -1,19 +1,19 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { portfolioData } from '../../data/portfolioData';
+import { formatCategoryName } from '../../utils/stringUtils';
 import PortfolioModal from './PortfolioModal';
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedProjectId, setSelectedProjectId] = useState(null);
 
-  const filtered = portfolioData.filter(item =>
-    activeFilter === 'all' || item.category === activeFilter
-  );
+  const categories = useMemo(() => ['all', ...new Set(portfolioData.map(item => item.category))], []);
 
-  const handleFilter = (filter) => {
-    setActiveFilter(filter);
-  };
+  const filtered = useMemo(
+    () => activeFilter === 'all' ? portfolioData : portfolioData.filter(item => item.category === activeFilter),
+    [activeFilter]
+  );
 
   return (
     <section className="portfolio section" id="portfolio">
@@ -22,38 +22,17 @@ export default function Portfolio() {
         <div className="row">
           <div className="portfolio-filter padd-15">
             <div className="portfolio-filter-inner">
-              <button
-                type="button"
-                className={activeFilter === 'all' ? 'active' : ''}
-                data-filter="all"
-                onClick={() => handleFilter('all')}
-              >
-                Everything
-              </button>
-              <button
-                type="button"
-                className={activeFilter === 'art' ? 'active' : ''}
-                data-filter="art"
-                onClick={() => handleFilter('art')}
-              >
-                Art
-              </button>
-              <button
-                type="button"
-                className={activeFilter === 'creative' ? 'active' : ''}
-                data-filter="creative"
-                onClick={() => handleFilter('creative')}
-              >
-                Creative
-              </button>
-              <button
-                type="button"
-                className={activeFilter === 'design' ? 'active' : ''}
-                data-filter="design"
-                onClick={() => handleFilter('design')}
-              >
-                Design
-              </button>
+              {categories.map(category => (
+                <button
+                  key={category}
+                  type="button"
+                  className={activeFilter === category ? 'active' : ''}
+                  data-filter={category}
+                  onClick={() => setActiveFilter(category)}
+                >
+                  {formatCategoryName(category)}
+                </button>
+              ))}
             </div>
           </div>
         </div>
@@ -64,10 +43,9 @@ export default function Portfolio() {
               <div
                 className="portfolio-item-inner"
                 onClick={() => setSelectedProjectId(item.id)}
-                style={{ cursor: 'pointer' }}
               >
                 <div className="portfolio-item-thumbnail">
-                  <img src={item.image} alt={item.title} />
+                  <img src={item.image} alt={item.title} loading="lazy" />
                   <div className="mask"></div>
                 </div>
                 <span className="term">{item.term}</span>

@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { portfolioData } from '../data/portfolioData';
+import { formatCategoryName } from '../utils/stringUtils';
 import PortfolioModal from '../components/Portfolio/PortfolioModal';
 import Footer from '../components/Footer/Footer';
 
@@ -7,11 +8,12 @@ export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedProjectId, setSelectedProjectId] = useState(null);
 
-  const filteredProjects = activeFilter === 'all'
-    ? portfolioData
-    : portfolioData.filter(item => item.category === activeFilter);
+  const categories = useMemo(() => ['all', ...new Set(portfolioData.map(item => item.category))], []);
 
-  const categories = ['all', ...new Set(portfolioData.map(item => item.category))];
+  const filteredProjects = useMemo(
+    () => activeFilter === 'all' ? portfolioData : portfolioData.filter(item => item.category === activeFilter),
+    [activeFilter]
+  );
 
   return (
     <main className="main-content" style={{ minHeight: '100vh', paddingTop: '100px' }}>
@@ -29,7 +31,7 @@ export default function PortfolioPage() {
                     className={activeFilter === category ? 'active' : ''}
                     onClick={() => setActiveFilter(category)}
                   >
-                    {category.charAt(0).toUpperCase() + category.slice(1)}
+                    {formatCategoryName(category)}
                   </button>
                 ))}
               </div>
@@ -42,10 +44,9 @@ export default function PortfolioPage() {
                 <div
                   className="portfolio-item-inner"
                   onClick={() => setSelectedProjectId(project.id)}
-                  style={{ cursor: 'pointer' }}
                 >
                   <div className="portfolio-item-thumbnail">
-                    <img src={project.image} alt={project.title} />
+                    <img src={project.image} alt={project.title} loading="lazy" />
                     <div className="mask"></div>
                   </div>
                   <span className="term">{project.term}</span>

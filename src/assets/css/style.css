@@ -941,10 +941,18 @@ h3 {
   overflow: hidden;
   border-radius: var(--border-radius);
   cursor: pointer;
+  aspect-ratio: 4 / 3;
 }
 
 .portfolio-item-thumbnail {
   border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.portfolio-item-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio-item .mask {
@@ -958,6 +966,7 @@ h3 {
   transition: 0.3s;
   border-radius: var(--border-radius);
   mix-blend-mode: multiply;
+  z-index: 1;
 }
 
 .portfolio-item-inner:hover .mask {
