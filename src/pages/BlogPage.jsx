@@ -37,7 +37,6 @@ export default function BlogPage() {
                       <li>{blog.date}</li>
                       <li>{blog.author}</li>
                     </ul>
-                    <p>Discover the latest insights and updates on development tools and best practices...</p>
                     <a href="javascript:void(0)" className="btn btn-default">Read More</a>
                     {blog.externalLink && <p style={{ fontSize: '0.75rem', color: '#999', marginTop: '0.5rem' }}>📎 Read on external site</p>}
                   </div>
