@@ -1,28 +1,4 @@
 export const blogData = {
-  '0a': {
-    id: '0a',
-    title: "How do I remove a C++ project's source code from a locally cloned Git repository?",
-    date: "November 15, 2023",
-    author: "Nymul Islam Moon",
-    category: "Git & C++",
-    image: "/assets/img/2.svg",
-    externalLink: "https://stackoverflow.com/a/77485155/13756777",
-    content: `
-      <p>This is a solution I provided on Stack Overflow for removing C++ project source code from a locally cloned git repository without affecting the remote repository.</p>
-
-      <p>The answer explains the best practices for managing local copies and keeping your repository clean while maintaining the integrity of the remote repository.</p>
-
-      <p><strong>Key Points:</strong></p>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li>Understanding git's local and remote separation</li>
-        <li>Safe removal of source code locally</li>
-        <li>Preventing accidental commits to remote</li>
-        <li>Best practices for repository management</li>
-      </ul>
-
-      <p style="margin-top: 15px;"><strong>View the full answer on Stack Overflow:</strong> <a href="https://stackoverflow.com/a/77485155/13756777" target="_blank">https://stackoverflow.com/a/77485155/13756777</a></p>
-    `
-  },
   '0': {
     id: '0',
     title: "AI: The Digital Weapon of Tomorrow | এআই: আগামীর ডিজিটাল অস্ত্র",

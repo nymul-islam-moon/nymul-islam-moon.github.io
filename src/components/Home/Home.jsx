@@ -16,11 +16,10 @@ export default function Home() {
           <span><TypingAnimation /></span>
 
           <ul className="social-icons">
-            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#"><i className="fa-brands fa-behance"></i></a></li>
-            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i className="fa-brands fa-github"></i></a></li>
+            <li><a href="https://stackoverflow.com/users/13756777/nymul-islam-moon" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-stack-overflow"></i></a></li>
+            <li><a href="https://github.com/nymul-islam-moon" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/nymul-islam-moon-5b7622200/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a></li>
           </ul>
 
           <div>
