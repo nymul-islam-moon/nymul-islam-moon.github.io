@@ -16,8 +16,8 @@ export const servicesData = [
   {
     id: 3,
     icon: "/assets/img/service-3.svg",
-    title: "AI & Machine Learning",
-    description: "Building intelligent systems with Python, implementing ML models, and integrating AI solutions into production applications.",
+    title: "Professional Photography",
+    description: "Capturing moments with creativity and precision. Expert in visual storytelling, composition, and producing high-quality images across various genres.",
     className: "service-pink"
   }
 ];
