@@ -1399,6 +1399,14 @@ h3 {
   background: rgb(14, 146, 207);
 }
 
+.skill-problemsolving .progress-in {
+  background: rgb(249, 123, 139);
+}
+
+.skill-fastapi .progress-in {
+  background: rgb(249, 215, 76);
+}
+
 /* Service card backgrounds */
 .service-purple .service-item-inner {
   background: rgb(108, 108, 229);
