@@ -5,7 +5,13 @@ export default function Home() {
     <section className="home" id="home">
       <div className="container">
         <div className="intro">
-          <img src="https://avatars.githubusercontent.com/u/67011212?v=4" alt="Nymul Islam Moon" />
+          <div className="about-img-container">
+            <div className="glassmorphism-glow glow-1"></div>
+            <div className="glassmorphism-glow glow-2"></div>
+            <div className="about-img-wrapper">
+              <img src="https://avatars.githubusercontent.com/u/67011212?v=4" alt="Nymul Islam Moon" />
+            </div>
+          </div>
           <h1>Nymul Islam Moon</h1>
           <span><TypingAnimation /></span>
 
