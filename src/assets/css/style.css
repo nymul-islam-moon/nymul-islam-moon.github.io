@@ -440,9 +440,16 @@ h3 {
 }
 
 .home .intro .social-icons a i {
-  font-size: 1.8rem !important;
+  font-size: 1.5rem !important;
   color: var(--color-primary) !important;
   line-height: 1;
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.home .intro .social-icons a i::before {
+  display: inline-block !important;
 }
 
 .home .intro .social-icons a:hover {
