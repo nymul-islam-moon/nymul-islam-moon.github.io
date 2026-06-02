@@ -31,7 +31,9 @@ export default function About() {
         <h2 className="section-title padd-15">About Me</h2>
         <div className="row">
           <div className="about-img padd-15">
-            <img src="/assets/img/avatar-2.svg" alt="About Nymul Islam Moon" />
+            <div className="about-img-wrapper">
+              <img src="/assets/img/professionalPhoto.png" alt="Nymul Islam Moon - Professional Portrait" />
+            </div>
           </div>
 
           <div className="about-content padd-15">
