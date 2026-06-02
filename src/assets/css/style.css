@@ -412,25 +412,36 @@ h3 {
 }
 
 .home .intro .social-icons {
-  margin-top: var(--m-1-5);
-  margin-bottom: var(--m-2);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: var(--m-1-5) 0 var(--m-2) 0;
 }
 
 .home .intro .social-icons li {
-  display: inline-block;
-}
-
-.home .intro .social-icons li:not(:last-child) {
-  margin-right: var(--m-1-5);
+  display: flex;
+  align-items: center;
 }
 
 .home .intro .social-icons a {
   font-size: var(--h3-font-size);
-  transition: color 0.3s;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
 }
 
 .home .intro .social-icons a:hover {
-  color: var(--color-dark);
+  color: white;
+  background: var(--color-primary);
+  transform: translateY(-3px);
 }
 
 .scroll-down {
