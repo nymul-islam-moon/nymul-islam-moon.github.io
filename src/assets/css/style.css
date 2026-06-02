@@ -414,10 +414,12 @@ h3 {
 .home .intro .social-icons {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
   list-style: none;
   padding: 0;
   margin: var(--m-1-5) 0 var(--m-2) 0;
+  flex-wrap: wrap;
 }
 
 .home .intro .social-icons li {
