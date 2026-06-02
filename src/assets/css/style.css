@@ -635,6 +635,7 @@ h3 {
 .about-content .skills .skill-item {
   flex: 0 0 100%;
   max-width: 100%;
+  position: relative;
 }
 
 .about-content .skills .skill-item h4 {
