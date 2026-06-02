@@ -170,7 +170,7 @@ h3 {
   font-family: var(--display-font);
   font-style: italic;
   font-weight: 300;
-  margin-top: var(--m-1-5);
+  margin-top: var(--m-2-5);
 }
 
 .typing-cursor {
