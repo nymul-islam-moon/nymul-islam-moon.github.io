@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 
 export default function TypingAnimation() {
   const titles = [
-    { text: 'Applied AI & Backend Engineer', article: 'an' },
+    { text: 'AI Backend Engineer', article: 'an' },
     { text: 'Python Developer', article: 'a' },
     { text: 'LLM Systems Engineer', article: 'an' },
-    { text: 'Problem Solver', article: 'a' },
     { text: 'AI Engineer', article: 'an' },
-    { text: 'Full Stack Developer', article: 'a' }
+    { text: 'Problem Solver', article: 'a' },
+    { text: 'Backend Architect', article: 'a' }
   ];
 
   const [displayText, setDisplayText] = useState('');
