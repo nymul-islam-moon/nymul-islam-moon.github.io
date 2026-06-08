@@ -35,6 +35,7 @@ export default function ThemeCustomizer({ isOpen, onClose }) {
   // Load theme settings on mount
   useEffect(() => {
     const savedSettings = localStorage.getItem('portfolioTheme');
+    const htmlElement = document.documentElement;
     if (savedSettings) {
       try {
         const settings = JSON.parse(savedSettings);
@@ -44,7 +45,12 @@ export default function ThemeCustomizer({ isOpen, onClose }) {
 
         // Apply saved settings
         if (settings.fontSize) {
-          document.documentElement.style.fontSize = settings.fontSize;
+          htmlElement.style.fontSize = settings.fontSize;
+        }
+        if (settings.activeFontSize === 'font-size-4') {
+          htmlElement.classList.add('font-size-max');
+        } else {
+          htmlElement.classList.remove('font-size-max');
         }
         if (settings.primaryHue) {
           root.style.setProperty('--primary-color-hue', String(settings.primaryHue).trim());
@@ -63,7 +69,8 @@ export default function ThemeCustomizer({ isOpen, onClose }) {
       }
     } else {
       // Apply default font size if no saved settings
-      document.documentElement.style.fontSize = '16px';
+      htmlElement.style.fontSize = '16px';
+      htmlElement.classList.remove('font-size-max');
       root.style.setProperty('--primary-color-hue', '352');
       root.style.setProperty('--light-color-lightness', '92%');
       root.style.setProperty('--white-color-lightness', '100%');
@@ -96,6 +103,13 @@ export default function ThemeCustomizer({ isOpen, onClose }) {
     setFontSize(sizeClass);
     const htmlElement = document.documentElement;
     htmlElement.style.fontSize = sizeValue;
+
+    // Add/remove class for max font size styling
+    if (sizeClass === 'font-size-4') {
+      htmlElement.classList.add('font-size-max');
+    } else {
+      htmlElement.classList.remove('font-size-max');
+    }
   };
 
   const handleColor = (colorClass, hueValue) => {

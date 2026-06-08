@@ -2352,11 +2352,23 @@ h3 {
   }
 
   .home .intro > div:last-of-type {
-    margin-bottom: 5.2rem;
+    margin-bottom: 11rem;
   }
 
   .scroll-down {
-    bottom: 0.9rem;
+    bottom: 1.5rem;
+    animation: float-small 3s ease-in-out infinite;
+  }
+
+  @keyframes float-small {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-5px);
+      opacity: 0.7;
+    }
   }
 
   .section-title {
@@ -2478,6 +2490,22 @@ h3 {
   .fact-item {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+
+/* Fix for max font size at 390px width */
+@media only screen and (max-width: 390px) {
+  .font-size-max .home .intro > div:last-of-type {
+    margin-bottom: 25rem;
+  }
+
+  .font-size-max .btn {
+    padding: 0.4rem 1rem !important;
+    font-size: 0.7rem !important;
+  }
+
+  .font-size-max .scroll-down {
+    bottom: 8rem;
   }
 }
 
