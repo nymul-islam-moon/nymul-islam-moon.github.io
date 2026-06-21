@@ -44,7 +44,20 @@ export default function About() {
             <div className="rounded">
               <div className="row">
                 <div className="about-text padd-15">
-                  <p>I'm an Applied AI & Backend Engineer from Bangladesh with a strong foundation in problem solving, enterprise backend development, and AI-powered systems. My journey began with competitive programming in C/C++, evolved through building large-scale PHP and Laravel-based ERP, HRM, CRM, and E-commerce platforms, and now focuses on Python-first AI engineering. I currently work on designing backend AI systems using OpenAI models, embeddings, Elasticsearch-based semantic search, and Retrieval-Augmented Generation (RAG) to deliver accurate, business-grounded responses. My core interest lies in building scalable, reliable, and trustworthy AI backends that strictly operate on structured internal data, minimizing hallucinations and irrelevant outputs. I enjoy translating complex business requirements into clean API-driven architectures and continuously deepen my expertise in Python, LLM systems, and modern AI infrastructure.</p>
+                  <h3>Applied AI & Backend Engineer</h3>
+                  <p>I am a production-focused <strong>AI Engineer and Backend Developer based in Bangladesh</strong>, specializing in building scalable, reliable, and trustworthy AI-powered systems.</p>
+
+                  <p>My journey began with competitive programming in C/C++, transitioned into architecting large-scale enterprise platforms (PHP, Laravel ERP/CRM), and has now evolved into <strong>Python-first AI engineering</strong>. Today, I bridge the gap between advanced Large Language Models (LLMs) and stable enterprise architecture.</p>
+
+                  <h4>Core Expertise</h4>
+                  <ul className="expertise-list">
+                    <li><strong>AI Infrastructure & RAG:</strong> Building production-ready Retrieval-Augmented Generation (RAG) systems using OpenAI models, vector embeddings, and Elasticsearch-based semantic search.</li>
+                    <li><strong>Enterprise Backend Systems:</strong> Designing clean, high-performance, API-driven architectures built to handle complex business logic without hallucinations or data leaks.</li>
+                    <li><strong>Tech Stack:</strong> Python, FastAPI, PHP, Laravel, Elasticsearch, C/C++, and relational/vector databases.</li>
+                  </ul>
+
+                  <p>I focus on translating complex enterprise requirements into secure, structured, and business-grounded AI backends. If you are looking for an experienced AI engineer to build or scale your intelligent data infrastructure, let's connect.</p>
+
                   <div>
                     <a href="#contact" className="btn btn-default">Download CV</a>
                   </div>
