@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /dist/
+Sitemap: https://nymul-islam-moon.github.io/sitemap.xml

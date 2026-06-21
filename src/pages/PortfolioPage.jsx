@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { portfolioData } from '../data/portfolioData';
 import { formatCategoryName } from '../utils/stringUtils';
 import PortfolioModal from '../components/Portfolio/PortfolioModal';
@@ -16,57 +17,67 @@ export default function PortfolioPage() {
   );
 
   return (
-    <main className="main-content" style={{ minHeight: '100vh', paddingTop: '100px' }}>
-      <section className="portfolio section" id="portfolio">
-        <div className="container">
-          <h2 className="section-title padd-15">My Portfolio</h2>
+    <>
+      <Helmet>
+        <title>Portfolio | AI Projects & Backend Systems</title>
+        <meta name="description" content="Explore my portfolio of AI engineering projects, RAG systems, backend infrastructure, and Python applications. View case studies of production-grade AI systems." />
+        <meta name="keywords" content="Portfolio, AI Projects, RAG Systems, Python Backend, FastAPI, LLM Projects, Case Studies, Software Projects" />
+        <meta property="og:title" content="AI Engineering Portfolio - Featured Projects" />
+        <meta property="og:description" content="See real-world AI systems, RAG platforms, and backend architectures I've built." />
+        <link rel="canonical" href="https://nymul-islam-moon.github.io/#/portfolio" />
+      </Helmet>
+      <main className="main-content" style={{ minHeight: '100vh', paddingTop: '100px' }}>
+        <section className="portfolio section" id="portfolio">
+          <div className="container">
+            <h2 className="section-title padd-15">My Portfolio</h2>
 
-          <div className="row">
-            <div className="portfolio-filter padd-15">
-              <div className="portfolio-filter-inner">
-                {categories.map(category => (
-                  <button
-                    key={category}
-                    type="button"
-                    className={activeFilter === category ? 'active' : ''}
-                    onClick={() => setActiveFilter(category)}
-                  >
-                    {formatCategoryName(category)}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            {filteredProjects.map(project => (
-              <div key={project.id} className="portfolio-item padd-15 show">
-                <div
-                  className="portfolio-item-inner"
-                  onClick={() => setSelectedProjectId(project.id)}
-                >
-                  <div className="portfolio-item-thumbnail">
-                    <img src={project.image} alt={project.title} loading="lazy" />
-                    <div className="mask"></div>
-                  </div>
-                  <span className="term">{project.term}</span>
-                  <h3 className="portfolio-item-title">{project.title}</h3>
-                  <span className="more-button">&hellip;</span>
+            <div className="row">
+              <div className="portfolio-filter padd-15">
+                <div className="portfolio-filter-inner">
+                  {categories.map(category => (
+                    <button
+                      key={category}
+                      type="button"
+                      className={activeFilter === category ? 'active' : ''}
+                      onClick={() => setActiveFilter(category)}
+                    >
+                      {formatCategoryName(category)}
+                    </button>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="row">
+              {filteredProjects.map(project => (
+                <div key={project.id} className="portfolio-item padd-15 show">
+                  <div
+                    className="portfolio-item-inner"
+                    onClick={() => setSelectedProjectId(project.id)}
+                  >
+                    <div className="portfolio-item-thumbnail">
+                      <img src={project.image} alt={project.title} loading="lazy" />
+                      <div className="mask"></div>
+                    </div>
+                    <span className="term">{project.term}</span>
+                    <h3 className="portfolio-item-title">{project.title}</h3>
+                    <span className="more-button">&hellip;</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {selectedProjectId && (
-        <PortfolioModal
-          projectId={selectedProjectId}
-          onClose={() => setSelectedProjectId(null)}
-        />
-      )}
+        {selectedProjectId && (
+          <PortfolioModal
+            projectId={selectedProjectId}
+            onClose={() => setSelectedProjectId(null)}
+          />
+        )}
 
-      <Footer />
-    </main>
+        <Footer />
+      </main>
+    </>
   );
 }

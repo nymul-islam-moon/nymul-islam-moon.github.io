@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Home from '../components/Home/Home';
 import About from '../components/About/About';
 import Services from '../components/Services/Services';
@@ -29,18 +30,28 @@ export default function MainPage() {
   };
 
   return (
-    <main className="main-content">
-      <Home />
-      <About />
-      <Services />
-      <Experience />
-      <Pricing />
-      <Portfolio />
-      <Testimonials />
-      <BlogPreview onBlogClick={handleBlogClick} />
-      <Contact />
-      <Footer />
-      <BlogModal blogId={selectedBlogId} onClose={handleCloseBlogModal} />
-    </main>
+    <>
+      <Helmet>
+        <title>Nymul Islam Moon - AI & Backend Engineer | Portfolio & Projects</title>
+        <meta name="description" content="Explore the portfolio of Nymul Islam Moon, an Applied AI & Backend Engineer specializing in RAG systems, Python, FastAPI, and enterprise backends. View projects, services, and experience." />
+        <meta name="keywords" content="AI Engineer, Backend Developer, Python, FastAPI, RAG Systems, LLM Projects, AI Infrastructure, Portfolio, Bangladesh" />
+        <meta property="og:title" content="Nymul Islam Moon - Portfolio" />
+        <meta property="og:description" content="Explore my AI engineering portfolio, projects, and professional experience in building scalable AI systems." />
+        <link rel="canonical" href="https://nymul-islam-moon.github.io/" />
+      </Helmet>
+      <main className="main-content">
+        <Home />
+        <About />
+        <Services />
+        <Experience />
+        <Pricing />
+        <Portfolio />
+        <Testimonials />
+        <BlogPreview onBlogClick={handleBlogClick} />
+        <Contact />
+        <Footer />
+        <BlogModal blogId={selectedBlogId} onClose={handleCloseBlogModal} />
+      </main>
+    </>
   );
 }
